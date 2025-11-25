@@ -8,7 +8,7 @@ namespace ActionCode.GameDataSystem.Editor
     /// </summary>
     public static class GameDataFinder
     {
-        [MenuItem("Tools/Find/GameData")]
+        [MenuItem("Tools/OneM/Find/GameData")]
         private static void FindGameData()
         {
             var hasGameData = TryGetGameData(out var gameData);
