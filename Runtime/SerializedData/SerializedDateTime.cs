@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ActionCode.GameDataSystem
+namespace OneM.GameDataSystem
 {
     /// <summary>
     /// Serialized wrapper for a <see cref="DateTime"/> struct in the ISO 8601 format.

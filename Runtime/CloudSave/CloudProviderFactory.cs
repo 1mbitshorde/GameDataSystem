@@ -1,4 +1,4 @@
-namespace ActionCode.GameDataSystem
+namespace OneM.GameDataSystem
 {
     /// <summary>
     /// Static factory class for <see cref="ICloudProvider"/> instances.

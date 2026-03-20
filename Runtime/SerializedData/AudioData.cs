@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ActionCode.GameDataSystem
+namespace OneM.GameDataSystem
 {
     /// <summary>
     /// Serialized data class for Audio.

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace ActionCode.GameDataSystem.Editor
+namespace OneM.GameDataSystem.Editor
 {
     /// <summary>
     /// Finds assets related to GameData.

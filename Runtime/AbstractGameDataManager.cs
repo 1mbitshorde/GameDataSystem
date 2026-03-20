@@ -2,9 +2,9 @@ using System;
 using System.Linq;
 using System.Collections;
 using UnityEngine;
-using ActionCode.Persistence;
+using OneM.Persistence;
 
-namespace ActionCode.GameDataSystem
+namespace OneM.GameDataSystem
 {
     /// <summary>
     /// Provides an abstract base class for managing game data, including local and cloud-based CRUD (CReate, Update, Delete) operations.
@@ -62,6 +62,7 @@ namespace ActionCode.GameDataSystem
         public string GetSerializedExtension() => Persistence.GetFileSystem().Serializer.Extension;
 
         #region SAVING
+        public void Save() => _ = SaveAsync();
         public async Awaitable SaveAsync() => await SaveAsync(LastSlotIndex);
 
         public async Awaitable SaveAsync(int slot)

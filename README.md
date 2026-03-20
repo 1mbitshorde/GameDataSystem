@@ -1,11 +1,8 @@
 # Game Data System
 
 * Game Data Serialization for Unity Games
-* Unity minimum version: **6000.1**
-* Current version: **1.2.0**
-* License: **MIT**
-* Dependencies:
-	- [com.actioncode.persistence : 5.0.0](https://github.com/HyagoOliveira/Persistence/tree/5.0.0/)
+* Unity minimum version: **6000.3**
+* Current version: **2.0.0**
 
 ## Summary
 
@@ -13,7 +10,7 @@ System to manager local and cloud CRUD (CReate, Update, Delete) operations into 
 
 You can Save, Load and Delete the Game Data files, both locally and remotely based on a Cloud Provider implementation.
 
-On Builds, all the files are encrypted and compressed using the [Persistence](https://github.com/HyagoOliveira/Persistence) package. You can choose which serialization method to use (Json, XML or Binary).
+On Builds, all the files are encrypted and compressed using the [Persistence](https://github.com/1mbitshorde/Persistence) package. You can choose which serialization method to use (Json, XML or Binary).
 
 To start to persisting data, you need first to create a serialized GameData class and a GameDataManager to manager this class.
 
@@ -25,7 +22,7 @@ Create a class extending from [AbstractGameData](/Runtime/AbstractGameData.cs):
 
 ```csharp
 using UnityEngine;
-using ActionCode.GameDataSystem;
+using OneM.GameDataSystem;
 
 [CreateAssetMenu(fileName = "GameData", menuName = "Game/Game Data", order = 110)]
 public sealed class GameData : AbstractGameData
@@ -65,7 +62,7 @@ Now create a GameDataManager class extending from [AbstractGameDataManager<T>](/
 
 ```csharp
 using UnityEngine;
-using ActionCode.GameDataSystem;
+using OneM.GameDataSystem;
 
 [CreateAssetMenu(fileName = "GameDataManager", menuName = "Game/Game Data Manager", order = 110)]
 public class GameDataManager : AbstractGameDataManager<GameData> // <- Put here your AbstractGameData implementation
@@ -79,7 +76,7 @@ Create an asset for the `GameDataManager`.
 
 ![The GameDataManager Asset](/Docs~/GameDataManager.png "The GameDataManager Asset")
 
-Link your GameData and a PersistenceSettings asset. Check [Creating the Persistence Settings](https://github.com/HyagoOliveira/Persistence?tab=readme-ov-file#creating-the-persistence-settings) for more details.
+Link your GameData and a PersistenceSettings asset. Check [Creating the Persistence Settings](https://github.com/1mbitshorde/Persistence?tab=readme-ov-file#creating-the-persistence-settings) for more details.
 
 In the Editor, use the Game Data Manager buttons to locally Save, Load (also from a file) and Delete the referenced GameData. Save, Load and Delete buttons use the Current Slot to do the operation. The Load File button will load a normal or encrypted file into the Current Slot as well.
 
@@ -139,7 +136,7 @@ public class GameDataController : MonoBehaviour
 
 Always use a `try-catch` block to handling exceptions that may happen when saving, loading or deleting.
 
-Following those [instructions](https://github.com/HyagoOliveira/Persistence?tab=readme-ov-file#checking-the-persisted-data) to know how to check the Persisted Data.
+Following those [instructions](https://github.com/1mbitshorde/Persistence?tab=readme-ov-file#checking-the-persisted-data) to know how to check the Persisted Data.
 
 ## Cloud Save
 
@@ -190,19 +187,19 @@ private async void OnDownloadClicked()
 
 ### Using the Package Registry Server
 
-Follow the instructions inside [here](https://cutt.ly/ukvj1c8) and the package **ActionCode-Game Data System** 
+Follow the instructions inside [here](https://cutt.ly/ukvj1c8) and the package **1M Bits Horde-Game Data System** 
 will be available for you to install using the **Package Manager** windows.
 
 ### Using the Git URL
 
 You will need a **Git client** installed on your computer with the Path variable already set. 
 
-- Use the **Package Manager** "Add package from git URL..." feature and paste this URL: `https://github.com/HyagoOliveira/GameDataSystem.git`
+- Use the **Package Manager** "Add package from git URL..." feature and paste this URL: `https://github.com/1mbitshorde/GameDataSystem.git`
 
 - You can also manually modify you `Packages/manifest.json` file and add this line inside `dependencies` attribute: 
 
 ```json
-"com.actioncode.game-data-system":"https://github.com/HyagoOliveira/GameDataSystem.git"
+"com.1mbitshorde.game-data-system":"https://github.com/1mbitshorde/GameDataSystem.git"
 ```
 
 ---

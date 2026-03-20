@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ActionCode.GameDataSystem
+namespace OneM.GameDataSystem
 {
     /// <summary>
     /// Serialized wrapper for a <see cref="Transform"/>.

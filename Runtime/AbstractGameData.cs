@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ActionCode.GameDataSystem
+namespace OneM.GameDataSystem
 {
     /// <summary>
     /// Abstract base class to persist Game Data.

@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 
-namespace ActionCode.GameDataSystem.Editor
+namespace OneM.GameDataSystem.Editor
 {
     /// <summary>
     /// Custom Drawer for <see cref="SerializedDateTime"/>. Draws it using one line.

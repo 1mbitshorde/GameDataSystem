@@ -1,6 +1,6 @@
 using System;
 
-namespace ActionCode.GameDataSystem
+namespace OneM.GameDataSystem
 {
     [Serializable]
     public sealed class GameSettings

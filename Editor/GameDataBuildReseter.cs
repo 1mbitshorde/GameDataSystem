@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 
-namespace ActionCode.GameDataSystem.Editor
+namespace OneM.GameDataSystem.Editor
 {
     /// <summary>
     /// Resets the project GameData (if available) before the Build starts.

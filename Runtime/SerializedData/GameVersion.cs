@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ActionCode.GameDataSystem
+namespace OneM.GameDataSystem
 {
     /// <summary>
     /// Represents a semantic version, with major, minor and patch number.

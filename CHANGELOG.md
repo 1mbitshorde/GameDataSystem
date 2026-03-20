@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-03-20
+### Changed
+- Move package into 1M Bits Horde
+
 ## [1.2.0] - 2025-11-25
 ### Added
 - OneM menu item
@@ -58,13 +62,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - gitignore
 - Initial commit
 
-[Unreleased]: https://github.com/HyagoOliveira/GameDataSystem/compare/1.2.0...main
-[1.2.0]: https://github.com/HyagoOliveira/GameDataSystem/tree/1.2.0/
-[1.1.0]: https://github.com/HyagoOliveira/GameDataSystem/tree/1.1.0/
-[1.0.0]: https://github.com/HyagoOliveira/GameDataSystem/tree/1.0.0/
-[0.5.1]: https://github.com/HyagoOliveira/GameDataSystem/tree/0.5.1/
-[0.5.0]: https://github.com/HyagoOliveira/GameDataSystem/tree/0.5.0/
-[0.4.0]: https://github.com/HyagoOliveira/GameDataSystem/tree/0.4.0/
-[0.3.0]: https://github.com/HyagoOliveira/GameDataSystem/tree/0.3.0/
-[0.2.0]: https://github.com/HyagoOliveira/GameDataSystem/tree/0.2.0/
-[0.1.0]: https://github.com/HyagoOliveira/GameDataSystem/tree/0.1.0/
+[Unreleased]: https://github.com/1mbitshorde/GameDataSystem/compare/2.0.0...main
+[2.0.0]: https://github.com/1mbitshorde/GameDataSystem/tree/2.0.0/
+[1.2.0]: https://github.com/1mbitshorde/GameDataSystem/tree/1.2.0/
+[1.1.0]: https://github.com/1mbitshorde/GameDataSystem/tree/1.1.0/
+[1.0.0]: https://github.com/1mbitshorde/GameDataSystem/tree/1.0.0/
+[0.5.1]: https://github.com/1mbitshorde/GameDataSystem/tree/0.5.1/
+[0.5.0]: https://github.com/1mbitshorde/GameDataSystem/tree/0.5.0/
+[0.4.0]: https://github.com/1mbitshorde/GameDataSystem/tree/0.4.0/
+[0.3.0]: https://github.com/1mbitshorde/GameDataSystem/tree/0.3.0/
+[0.2.0]: https://github.com/1mbitshorde/GameDataSystem/tree/0.2.0/
+[0.1.0]: https://github.com/1mbitshorde/GameDataSystem/tree/0.1.0/

@@ -1,4 +1,4 @@
-namespace ActionCode.GameDataSystem
+namespace OneM.GameDataSystem
 {
     /// <summary>
     /// All available Cloud Provider types.

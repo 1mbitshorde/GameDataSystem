@@ -1,7 +1,7 @@
 using UnityEngine;
-using ActionCode.Persistence;
+using OneM.Persistence;
 
-namespace ActionCode.GameDataSystem
+namespace OneM.GameDataSystem
 {
     /// <summary>
     /// Interface used on objects able to be a Game Data Manager.

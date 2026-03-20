@@ -1,8 +1,8 @@
 using UnityEditor;
 using UnityEngine;
-using ActionCode.Persistence;
+using OneM.Persistence;
 
-namespace ActionCode.GameDataSystem.Editor
+namespace OneM.GameDataSystem.Editor
 {
     /// <summary>
     /// Custom editor for any <see cref="AbstractGameDataManager{T}"/> implementation.
