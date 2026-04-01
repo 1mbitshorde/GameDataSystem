@@ -2,7 +2,7 @@
 
 * Game Data Serialization for Unity Games
 * Unity minimum version: **6000.3**
-* Current version: **2.0.0**
+* Current version: **2.1.0**
 
 ## Summary
 
