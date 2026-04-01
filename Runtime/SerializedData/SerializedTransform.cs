@@ -22,6 +22,16 @@ namespace OneM.GameDataSystem
             this(transform.position, transform.rotation)
         { }
 
+        public readonly bool IsInvalid() =>
+            Position == null ||
+            Rotation == null;
+
+        public readonly void GetPositionAndRotation(out Vector3 position, out Quaternion rotation)
+        {
+            position = Position;
+            rotation = Rotation;
+        }
+
         public static implicit operator SerializedTransform(Transform transform) => new(transform);
     }
 }
