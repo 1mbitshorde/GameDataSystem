@@ -9,8 +9,8 @@ namespace OneM.GameDataSystem
     public abstract class AbstractGameData : ScriptableObject
     {
         // All fields should be public and named in CamelCase (including inner classes)
-
         public int SlotIndex;
+        public uint Saves;
         public ulong GameSecondsTime;
         public SerializedDateTime Created;
         public SerializedDateTime LastUpdate;
@@ -19,10 +19,12 @@ namespace OneM.GameDataSystem
 
         public event Action OnUpdated;
 
+        public bool IsNewGame() => Saves <= 1; // Always saving once when create a new GameData
         public bool HasValidLanguage() => !string.IsNullOrEmpty(Settings?.LanguageCode);
 
         public void UpdateData(int slot)
         {
+            Saves++;
             SlotIndex = slot;
             LastUpdate = DateTime.Now;
             if (Created.IsEmpty()) Created = DateTime.Now;
