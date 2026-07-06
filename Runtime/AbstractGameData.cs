@@ -30,8 +30,10 @@ namespace OneM.GameDataSystem
             if (Created.IsEmpty()) Created = DateTime.Now;
             Version.Update();
 
-            OnUpdated?.Invoke();
+            InvokeUpdate();
         }
+
+        public void InvokeUpdate() => OnUpdated?.Invoke();
 
         public AbstractGameData Copy()
         {

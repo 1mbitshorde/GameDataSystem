@@ -1,8 +1,8 @@
-using System;
-using System.Linq;
-using System.Collections;
-using UnityEngine;
 using OneM.Persistence;
+using System;
+using System.Collections;
+using System.Linq;
+using UnityEngine;
 
 namespace OneM.GameDataSystem
 {
@@ -63,6 +63,8 @@ namespace OneM.GameDataSystem
 
         #region SAVING
         public void Save() => _ = SaveAsync();
+        public void InvokeDataUpdate() => gameData.InvokeUpdate();
+
         public async Awaitable SaveAsync() => await SaveAsync(LastSlotIndex);
 
         public async Awaitable SaveAsync(int slot)
