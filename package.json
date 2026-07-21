@@ -1,7 +1,7 @@
 {
   "name": "com.1mbitshorde.game-data-system",
   "displayName": "1M Bits Horde-Game Data System",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "unity": "6000.3",
   "description": "Game Data Serialization.",
   "keywords": [
