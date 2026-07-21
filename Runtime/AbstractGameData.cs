@@ -20,7 +20,7 @@ namespace OneM.GameDataSystem
         public event Action OnUpdated;
 
         public bool IsNewGame() => Saves <= 1; // Always saving once when create a new GameData
-        public bool HasValidLanguage() => !string.IsNullOrEmpty(Settings?.LanguageCode);
+        public bool HasValidLanguage() => Settings.HasLanguageCode();
 
         public void UpdateData(int slot)
         {
@@ -40,7 +40,10 @@ namespace OneM.GameDataSystem
             var className = GetType().Name;
             var copy = CreateInstance(className) as AbstractGameData;
             var json = JsonUtility.ToJson(this);
+
             JsonUtility.FromJsonOverwrite(json, copy);
+            copy.Validate();
+
             return copy;
         }
 
@@ -52,6 +55,8 @@ namespace OneM.GameDataSystem
             JsonUtility.FromJsonOverwrite(json, this);
         }
 
+        public virtual void Validate() => Settings.Validate();
+
         public override string ToString() => GetDisplayName();
         public virtual string GetDisplayName() => $"Game Data {SlotIndex:D2}";
 
@@ -62,6 +67,13 @@ namespace OneM.GameDataSystem
             var seconds = GameSecondsTime % 60;
 
             return $"{hours:D2}:{minutes:D2}:{seconds:D2}";
+        }
+
+        public static T CreateValidInstance<T>() where T : AbstractGameData
+        {
+            var instance = CreateInstance<T>();
+            instance.Validate();
+            return instance;
         }
     }
 }
