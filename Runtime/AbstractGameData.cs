@@ -42,6 +42,7 @@ namespace OneM.GameDataSystem
             Version.Update();
 
             InvokeUpdate();
+            Validate();
         }
 
         public void InvokeUpdate() => OnUpdated?.Invoke();
